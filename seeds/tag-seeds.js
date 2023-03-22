@@ -5,9 +5,6 @@ const tagData = [
     tag_name: "succulents",
   },
   {
-    tag_name: "easy maintenance",
-  },
-  {
     tag_name: "multicolor",
   },
   {
