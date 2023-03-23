@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const morgan = require("morgan");
 
 //middleware backend sent to frontend
 app.use(bodyParser.json());
+//middleware that provides logging functionality for HTTP requests
+app.use(morgan("tiny"));
 
 //loading environment variables from a .env file and making them
 //available in the process.env object.
