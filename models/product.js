@@ -36,8 +36,8 @@ Product.init({
       allowNull: true,
     },
 
-    imageData: {
-      type: DataTypes.BLOB("long"),
+    imageSource: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
 
