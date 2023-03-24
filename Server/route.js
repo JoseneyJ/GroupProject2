@@ -2,6 +2,10 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
+const sequelize = require("sequelize");
+const path = require("path");
+
+app.use(express.static("public"));
 
 //middleware backend sent to frontend
 app.use(bodyParser.json());
