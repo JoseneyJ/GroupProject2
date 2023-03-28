@@ -4,6 +4,9 @@
   "description": "Welcome to Plant2Pot Repository. This is a web application that allows the purchase of all types of plants!",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +30,6 @@
     "morgan": "^1.10.0",
     "mysql2": "^3.2.0",
     "nodemon": "^2.0.21",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.30.0"
   }
 }
