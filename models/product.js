@@ -37,7 +37,7 @@ Product.init(
             allowNull: true,
         },
 
-        imageSource: {
+        image_source: {
             type: DataTypes.STRING,
             allowNull: false,
         },
