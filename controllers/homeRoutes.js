@@ -23,10 +23,11 @@ router.get('/', async (req, res) => {
         const products = await productData.map((product) =>
             product.get({ plain: true })
         )
-        res.render('homepage', {
-            products,
-            logged_in: req.session.logged_in,
-        })
+        // res.render('homepage', {
+        //     products,
+        //     logged_in: req.session.logged_in,
+        // })
+        res.json(productData)
     } catch (err) {
         res.status(500).json(err)
     }
@@ -49,13 +50,15 @@ router.get('/product/:id', async (req, res) => {
                 },
             ],
         })
+        console.log(productData)
 
-        const product = productData.get({ plain: true })
+        const product = await productData.get({ plain: true })
+        res.json(product)
 
-        res.render('product', {
-            ...product,
-            logged_in: req.session.logged_in,
-        })
+        // res.render('product', {
+        //     ...product,
+        //     logged_in: req.session.logged_in,
+        // })
     } catch (err) {
         res.status(500).json(err)
     }
