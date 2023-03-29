@@ -23,11 +23,11 @@ router.get('/', async (req, res) => {
         const products = await productData.map((product) =>
             product.get({ plain: true })
         )
-        // res.render('homepage', {
-        //     products,
-        //     logged_in: req.session.logged_in,
-        // })
-        res.json(productData)
+        res.render('homepage', {
+            products,
+            logged_in: req.session.logged_in,
+        })
+        //res.json(productData)
     } catch (err) {
         res.status(500).json(err)
     }

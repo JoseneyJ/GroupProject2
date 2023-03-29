@@ -2,9 +2,9 @@
   "name": "groupproject2",
   "version": "1.0.0",
   "description": "Welcome to Plant2Pot Repository. This is a web application that allows the purchase of all types of plants!",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
