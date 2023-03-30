@@ -53,12 +53,12 @@ router.get('/product/:id', async (req, res) => {
         console.log(productData)
 
         const product = await productData.get({ plain: true })
-        res.json(product)
+        // res.json(product)
 
-        // res.render('product', {
-        //     ...product,
-        //     logged_in: req.session.logged_in,
-        // })
+        res.render('product', {
+            ...product,
+            logged_in: req.session.logged_in,
+        })
     } catch (err) {
         res.status(500).json(err)
     }
@@ -92,6 +92,14 @@ router.get('/login', (req, res) => {
     }
 
     res.render('login')
+})
+
+router.get('/contact', (req, res) => {
+    res.render('contact')
+})
+
+router.get('/aboutus', (req, res) => {
+    res.render('aboutus')
 })
 
 module.exports = router
