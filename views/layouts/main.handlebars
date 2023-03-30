@@ -5,22 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plants 2 Pot</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="/public/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/public/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to Plants 2 Pot!</h1>
+  <header>git
+   <div class="container">
+    <img src ="/public/images/logo.jpg" alt="logo" class="logo">
   </header>
   <nav>
-    <a href="/">Home</a>
+    <a href="/">HOME</a>
+    <a href ="/">ABOUT US</a>
+    <a href="/">CONTACT</a>
     <!-- If the user is logged in, show a logout button -->
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <!-- Otherwise, show a link to login -->
-    <a href="/login">Login</a>
+    <a href="/login">LOGIN</a>
     {{/if}}
   </nav>
   <main>
