@@ -5,19 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plants 2 Pot</title>
-  <link rel="stylesheet" type="text/css" href="/public/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-  <header>git
-   <div class="container">
-    <img src ="/public/images/logo.jpg" alt="logo" class="logo">
-  </header>
+  <header>
+
+    <img src ="/images/logo.jpg" alt="logo" class="logo">
+  
   <nav>
     <a href="/">HOME</a>
-    <a href ="/">ABOUT US</a>
-    <a href="/">CONTACT</a>
+    <a href ="/aboutus">ABOUT US</a>
+    <a href="/contact">CONTACT</a>
+    <a href="/cart">CART</a>
     <!-- If the user is logged in, show a logout button -->
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
@@ -26,10 +26,9 @@
     <a href="/login">LOGIN</a>
     {{/if}}
   </nav>
+  </header>
   <main>
-    <aside>
-      <h2>Enjoy the Plants!</h2>
-    </aside>
+  
     <div class="gallery">
       {{{body}}}
     </div>
