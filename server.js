@@ -36,13 +36,10 @@ app.set('view engine', 'handlebars')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-<<<<<<< HEAD
-app.use(express.static(path.join(__dirname, 'public'))) ?? Question this line
-=======
 app.use(express.static(path.join(__dirname, 'public')))
->>>>>>> 845c8a0a8712e69badefd53d019f3de36f62914f
 
-app.use(routes)
+
+app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'))
