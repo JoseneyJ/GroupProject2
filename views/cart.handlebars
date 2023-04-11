@@ -1,4 +1,53 @@
-<div>
-
-    <h2>Your cart has </h2>
+<header>
+    //navbar creation//
+<nav class="navbar fixed-top navbar-dark navbar-expand-md bg-success text-white">
+    <a class="text-white navbar-brand" href="/">
+        <i class="fab fa-pagelines"></i>Plant2Pot
+    </a>
+<button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+    aria-label="Toggle navigation"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto menu">
+        <li class="nav-item active">
+            <a href="/" class="nav-link">Home</a>
+    </li>
+</ul>
+    <form class="form-inline mt-2 mt-md-0">
+        <a href="#" class="text-white nav-link">
+    <i id="cart_n" class="text-warning fas fa-shopping-cart">
+            </i> Cart
+    </a>
+        <a href="/login" class="nav-link disabled text-white">
+    <i class="far fa-user"></i> Login
+    </a> 
+        </form>
+            </div>
+                </nav>
+    </header>
+    //table creation//
+<div class="container mt-3">
+        <main roles="main">
+            <div class="row">
+                <div class="coloum">
+                    <div class="table-response-sm">
+                <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="coloum"#</th>
+                                <th scope="coloum"Name</th>
+                                <th scope="coloum"Quantity</th>
+                                <th scope="coloum"Price</th>
+                            </tr>
+                        </thead>
+            <tbody id="table">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <hr class="featurette-divider">
+    </main>
 </div>
+<script src="/js/cart.js"></script>
